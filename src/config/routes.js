@@ -9,6 +9,7 @@ router.get('/charts', HomeController.charts);
 router.get('/buttons', HomeController.buttons);
 router.get('/utilities-other', HomeController.others);
 router.get('/blank', HomeController.blank);
+router.get('/utilitiesBorder', HomeController.utilitiesBorder);
 router.get('/utilities-color', HomeController.color);
 
 module.exports = router;
