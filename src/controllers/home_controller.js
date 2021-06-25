@@ -5,6 +5,9 @@ module.exports = {
   cards: function(req, res) {
     res.render('home/cards');
   },
+  charts: function(req, res) {
+    res.render('home/cards');
+  },
   buttons: function(req, res) {
     res.render('home/buttons');
   },
