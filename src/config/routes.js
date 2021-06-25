@@ -7,6 +7,7 @@ router.get('/login', HomeController.login);
 router.get('/cards', HomeController.cards);
 router.get('/blank', HomeController.blank);
 router.get('/forgot-password', HomeController.forgotPassword);
+router.get('/register', HomeController.register);
 
 
 module.exports = router;

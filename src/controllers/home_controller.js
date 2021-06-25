@@ -13,5 +13,8 @@ module.exports = {
   },
   forgotPassword: function(req, res) {
     res.render('home/forgot-password');
+  },
+  register: function(req, res) {
+    res.render('home/register');
   }
 }
