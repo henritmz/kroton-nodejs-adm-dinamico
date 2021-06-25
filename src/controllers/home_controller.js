@@ -20,6 +20,12 @@ module.exports = {
   login: function(req, res) {
     res.render('home/login');
   },
+  forgotPassword: function(req, res) {
+    res.render('home/forgot-password');
+  },
+  register: function(req, res) {
+    res.render('home/register');
+  },
   utilitiesBorder: function(req, res) {
     res.render('home/utilities-border');
   },
