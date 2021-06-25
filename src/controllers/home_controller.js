@@ -20,4 +20,8 @@ module.exports = {
   login: function(req, res) {
     res.render('home/login');
   },
+  utilitiesBorder: function(req, res) {
+    res.render('home/utilities-border');
+  },
+  
 }
