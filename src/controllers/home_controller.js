@@ -5,6 +5,15 @@ module.exports = {
   cards: function(req, res) {
     res.render('home/cards');
   },
+  charts: function(req, res) {
+    res.render('home/cards');
+  },
+  buttons: function(req, res) {
+    res.render('home/buttons');
+  },
+  others: function (req, res) {
+     res.render('home/others');
+  },
   blank: function(req, res) {
     res.render('home/blank');
   },
@@ -16,5 +25,11 @@ module.exports = {
   },
   register: function(req, res) {
     res.render('home/register');
-  }
+  },
+  utilitiesBorder: function(req, res) {
+    res.render('home/utilities-border');
+  },
+  color: function(req, res) {
+    res.render('home/color');
+  },
 }
