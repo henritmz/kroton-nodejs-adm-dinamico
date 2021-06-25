@@ -23,5 +23,7 @@ module.exports = {
   utilitiesBorder: function(req, res) {
     res.render('home/utilities-border');
   },
-  
+  color: function(req, res) {
+    res.render('home/color');
+  },
 }
