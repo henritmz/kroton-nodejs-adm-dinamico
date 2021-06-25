@@ -6,6 +6,7 @@ router.get('/', HomeController.index);
 router.get('/login', HomeController.login);
 router.get('/cards', HomeController.cards);
 router.get('/blank', HomeController.blank);
+router.get('/forgot-password', HomeController.forgotPassword);
 
 
 module.exports = router;

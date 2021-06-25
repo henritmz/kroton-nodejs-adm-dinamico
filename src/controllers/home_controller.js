@@ -11,4 +11,7 @@ module.exports = {
   login: function(req, res) {
     res.render('home/login');
   },
+  forgotPassword: function(req, res) {
+    res.render('home/forgot-password');
+  }
 }
