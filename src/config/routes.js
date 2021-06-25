@@ -11,7 +11,7 @@ router.get('/utilities-other', HomeController.others);
 router.get('/blank', HomeController.blank);
 router.get('/forgot-password', HomeController.forgotPassword);
 router.get('/register', HomeController.register);
-router.get('/utilitiesBorder', HomeController.utilitiesBorder);
+router.get('/utilities-border', HomeController.utilitiesBorder);
 router.get('/utilities-color', HomeController.color);
 
 module.exports = router;
