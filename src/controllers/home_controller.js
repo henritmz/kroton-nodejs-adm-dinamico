@@ -20,4 +20,7 @@ module.exports = {
   login: function(req, res) {
     res.render('home/login');
   },
+  color: function(req, res) {
+    res.render('home/color');
+  },
 }
