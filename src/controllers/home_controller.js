@@ -14,8 +14,14 @@ module.exports = {
   others: function (req, res) {
      res.render('home/others');
   },
+  utilities_animation: function (req, res) {
+    res.render('home/utilities-animation');
+  },
   blank: function(req, res) {
     res.render('home/blank');
+  },
+  tables: function(req, res) {
+    res.render('home/tables');
   },
   login: function(req, res) {
     res.render('home/login');
