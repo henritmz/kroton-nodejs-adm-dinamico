@@ -1,3 +1,5 @@
+const Cookie = require("../helpers/cookie")
+
 module.exports = {
   index: function(req, res) {
     res.render('home/index');
@@ -24,7 +26,24 @@ module.exports = {
     res.render('home/tables');
   },
   login: function(req, res) {
-    res.render('home/login');
+    res.render('home/login', {erro: undefined});
+  },
+  logar: function(req, res) {
+    const email = req.query.email
+    const senha = req.query.senha
+    const lembrar = req.query.lembrar
+
+    if(email === "kroton@gama.com" && senha === "123456"){
+      let minutos = lembrar === "on" ? (24 * 60) : 60;
+      Cookie.set(res, "usuario", JSON.stringify({email: email}), minutos)
+      return res.redirect("/")
+    }
+
+    res.render('home/login', {erro: "Login ou senha inválidos"});
+  },
+  logout: function(req, res) {
+    Cookie.remove(res, "usuario")
+    res.redirect("/login")
   },
   forgotPassword: function(req, res) {
     res.render('home/forgot-password');
