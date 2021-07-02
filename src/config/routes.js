@@ -6,6 +6,8 @@ const LoginMiddleware = require("../middlewares/login")
 router.get('/login', HomeController.login);
 router.get('/forgot-password', HomeController.forgotPassword);
 router.get('/register', HomeController.register);
+router.get('/logar', HomeController.logar);
+router.get('/logout', HomeController.logout);
 
 router.get('/', LoginMiddleware, HomeController.index);
 router.get('/cards', LoginMiddleware, HomeController.cards);
